@@ -7,11 +7,11 @@ import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class GoogleTest {
+public class MailruTest {
     @Test
     void selenideSearchTest() {
         // Открыть google
-        open("https://google.com");
+        open("https://mail.ru");
 
         // Ввести Selenide в поиск
         $(byName("q")).setValue("Selenide").pressEnter();
