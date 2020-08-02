@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class MailruTest {
     @Test
     void selenideSearchTest() {
-        // Открыть google
+        // Открыть mail.ru
         open("https://mail.ru");
 
         // Ввести Selenide в поиск
