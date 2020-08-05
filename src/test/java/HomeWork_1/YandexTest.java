@@ -1,4 +1,4 @@
-package tests;
+package HomeWork_1;
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -13,6 +13,6 @@ public class YandexTest {
     void searchTest() {
        open("https://yandex.ru");
         $(byClassName("input__control")).setValue("Kung Fu Panda").pressEnter();
-        final SelenideElement selenideElement = $("html").shouldHave(text("Kung Fu Panda"));
+        $("html").shouldHave(text("Kung Fu Panda"));
     }
 }
