@@ -21,5 +21,5 @@ public class LamodaSearch_HW_2 {
 
         $("body").shouldHave(text("Женщинам"));
 
-}
+    }
 }
