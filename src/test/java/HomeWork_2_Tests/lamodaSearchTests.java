@@ -1,4 +1,4 @@
-package HomeWork_2;
+package HomeWork_2_Tests;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,9 +7,9 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class LamodaSearch_HW_2 {
+public class lamodaSearchTests {
     @Test
-    void LamodaSearchTest() {
+    void lamodaSearchTest() {
         // Открыть lamoda.ru
         open("https://lamoda.ru");
 

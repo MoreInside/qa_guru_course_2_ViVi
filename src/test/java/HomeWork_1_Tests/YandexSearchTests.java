@@ -1,18 +1,18 @@
-package HomeWork_1;
-import com.codeborne.selenide.SelenideElement;
+package HomeWork_1_Tests;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class YandexTest {
+public class YandexSearchTests {
     @Test
     void searchTest() {
-       open("https://yandex.ru");
-        $(byClassName("input__control")).setValue("Kung Fu Panda").pressEnter();
+        open("https://yandex.ru");
+
+        $(".input__control").setValue("Kung Fu Panda").pressEnter();
+
         $("html").shouldHave(text("Kung Fu Panda"));
     }
 }

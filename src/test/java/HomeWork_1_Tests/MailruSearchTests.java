@@ -1,4 +1,4 @@
-package HomeWork_1;
+package HomeWork_1_Tests;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class MailruTest {
+public class MailruSearchTests {
     @Test
     void selenideSearchTest() {
         // Открыть mail.ru
