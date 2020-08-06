@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class lamodaSearchTests {
+public class LamodaSearchTests {
     @Test
     void lamodaSearchTest() {
         // Открыть lamoda.ru

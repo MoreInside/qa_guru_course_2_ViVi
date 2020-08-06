@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class YandexSearchTests {
     @Test
-    void searchTest() {
+    void yandexSearchTest() {
         open("https://yandex.ru");
 
         $(".input__control").setValue("Kung Fu Panda").pressEnter();
