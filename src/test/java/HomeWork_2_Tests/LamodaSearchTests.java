@@ -12,10 +12,6 @@ import static org.openqa.selenium.By.className;
 
 public class LamodaSearchTests {
 
-    @BeforeEach
-    void openSite() {
-    open("https://lamoda.ru");
-    }
     @Test
     void lamodaSearchTest() {
         open("https://lamoda.ru");
@@ -43,15 +39,14 @@ public class LamodaSearchTests {
         open("https://lamoda.ru");
 
         // ввести в поиске наименование товара
-        $x("//input[@type='text']").val("Byredo").pressEnter();
+        $x("//input[@type='text']").val("BAL D'AFRIQUE EDP").pressEnter();
+
         //добавить товар в корзину
-        $(".product-label-UI10997").click();
-        //добавить товар в корзину
-        //$(byTitle("Добавить в корзину")).click();
+        $(byTitle("ДAL D'AFRIQUE EDP")).click();
         //перейти в корзину
         //$(byTitle("Перейти в корзину")).click();
 
-        //$(className(".AN037AWDFA28R3839")).click();
+        //$(className("AN037AWDFA28R3839")).click();
     }
 
 

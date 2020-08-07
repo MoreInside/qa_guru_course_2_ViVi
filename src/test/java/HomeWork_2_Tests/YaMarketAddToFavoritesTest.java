@@ -8,13 +8,13 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class YaMarketAddToFavoritesTest {
 
-    class yaMarketAddToFavorites {
+    static class yaMarketAddToFavoritesTest {
         @Test
-        public void yaMarketFavorites() {
+        public void yaMarketFavoritesTest() {
 
             open("https://market.yandex.ru");
 
-            $(byName("text")).setValue("ретро консоли").pressEnter();
+            $(byName("q")).setValue("ретро консоли").pressEnter();
 
             $(byPartialLinkText("Игровая приставка SUP Game Box")).click();
 
