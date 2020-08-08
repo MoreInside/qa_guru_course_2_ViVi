@@ -3,7 +3,7 @@ package HomeWork_2_Tests;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.open;
-
+import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.*;
@@ -42,7 +42,10 @@ public class LamodaSearchTests {
         $x("//input[@type='text']").val("BAL D'AFRIQUE EDP").pressEnter();
 
         //добавить товар в корзину
-        $(byTitle("ДAL D'AFRIQUE EDP")).click();
+        //$(".products-list-item_labels").hover();
+       // $(".products-list-item__extra-info").shouldBe(visible);
+        $(".products-list-item__extra-info").click();
+
         //перейти в корзину
         //$(byTitle("Перейти в корзину")).click();
 
