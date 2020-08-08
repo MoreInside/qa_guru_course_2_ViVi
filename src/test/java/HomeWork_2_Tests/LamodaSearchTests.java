@@ -1,14 +1,11 @@
 package HomeWork_2_Tests;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static com.codeborne.selenide.Selenide.open;
-import org.junit.jupiter.api.Test;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-import static org.openqa.selenium.By.className;
 
 public class LamodaSearchTests {
 
@@ -40,19 +37,14 @@ public class LamodaSearchTests {
 
         // ввести в поиске наименование товара
         $x("//input[@type='text']").val("BAL D'AFRIQUE EDP").pressEnter();
-
         //добавить товар в корзину
         //$(".products-list-item_labels").hover();
        // $(".products-list-item__extra-info").shouldBe(visible);
-        $(".products-list-item__extra-info").click();
-
+        //$(".products-list-item__extra-info").click();
         //перейти в корзину
         //$(byTitle("Перейти в корзину")).click();
 
-        //$(className("AN037AWDFA28R3839")).click();
     }
-
-
-    }
+}
 
 
