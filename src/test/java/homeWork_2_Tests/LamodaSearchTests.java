@@ -7,32 +7,40 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
+
 public class LamodaSearchTests {
 
     @Test
-    void lamodaSearchTest() {
+    void switchToWomanTest() {
         open("https://lamoda.ru");
+        
         $(byText("Женщинам")).click();
+        
         $("body").shouldHave(text("Женщинам"));
+        $(by("data-genders", "women").shouldHave(cssClass("menu_und__link_active"));
     }
 
     @Test
-    void lamodaLoginFormShouldBeOpenedTest() {
+    void loginFormShouldBeOpenedTest() {
         open("https://lamoda.ru");
-        $(byText("Войти")).click();
+        
+        $(".js-auth-button").click();
+        
         $(".auth-social__title").shouldBe(visible);
     }
 
     @Test
-    void lamodaRegistrationFormShouldBeOpenedTest() {
+    void registrationFormShouldBeOpenedTest() {
         open("https://lamoda.ru");
-        $(byText("Войти")).click();
-        $(".popup__content-wrapper").click();
-        $(".login-form__register").shouldBe(visible);
+        
+        $(".js-auth-button").click();
+        $(".login-form__register").click();
+
+        $(".register-form__inner").shouldBe(visible);
     }
 
     @Test
-    void lamodarAddToCartTest() {
+    void addToCartTest() {
         open("https://lamoda.ru");
 
         // ввести в поиске наименование товара
