@@ -7,14 +7,17 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
+
 public class WomenSearchProductTest {
 
     @Test
     void searchProductTest() {
         open("http://automationpractice.com");
+        
         $("#search_query_top").val("Blouse").pressEnter();
-        $x("//img[@title='Blouse']").shouldBe(visible);
-        $(byText("1 result has been found.")).should(exist);
+        
+        $(".product_list").shouldHave(text("Blouse");
+        $(byText("1 result has been found.")).shouldBe(visible);
     }
 }
 
