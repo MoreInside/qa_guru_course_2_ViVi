@@ -1,4 +1,4 @@
-package HomeWork_2_Tests;
+package homeWork_2_Tests;
 
 import org.junit.jupiter.api.Test;
 

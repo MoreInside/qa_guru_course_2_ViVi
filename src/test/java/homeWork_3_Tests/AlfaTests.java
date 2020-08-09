@@ -1,4 +1,4 @@
-package HomeWork_3_Tests;
+package homeWork_3_Tests;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,8 +8,9 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 public class AlfaTests {
+
     @Test
-    void archivedDepositsViewTest(){
+    void archivedDepositsViewTest() {
         open("http://alfabank.ru");
 
         $(byTitle("Вклады")).hover();
@@ -18,5 +19,15 @@ public class AlfaTests {
 
         $("h3").shouldHave(text("Архивные депозиты"));
         $$(".product-cell__cell").shouldHave(size(3));
+    }
+
+    @Test
+    void depositInsuranceViewTest() {
+        open("https://alfabank.ru/");
+
+        $(byTitle("Вклады")).click();
+        $(".navigation li").sibling(4).click();
+
+        $("h1").shouldHave(text("Страхование вкладов"));
     }
 }

@@ -1,4 +1,4 @@
-package HomeWork_2_Tests;
+package homeWork_2_Tests;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class WomenSearchProductTest {
+
     @Test
     void searchProductTest() {
         open("http://automationpractice.com");
