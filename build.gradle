@@ -47,3 +47,10 @@ task WorkWithJenkinsTests(type: Test) {
 
     }
 }
+
+task parameterizedStringTest(type: Test) {
+    useJUnitPlatform {
+        includeTags 'parameterizedStringTest'
+        includeTags 'mango_tag'
+    }
+}
