@@ -33,8 +33,8 @@ public class WorkWithJenkinsTests {
     @Test
     @Tag("HW_7_JenkinsJob")
     public void StringTest() {
-        String a = "Hello";
-        String b = "Jenkins";
+        String a = "Hello,";
+        String b = "Jenkins!";
         System.out.println(a + " " + b);
         assertEquals(a, a,b);
     }
