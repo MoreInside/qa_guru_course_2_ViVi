@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 /**
  * 1. Зарегистрироваться в Jenkins https://jenkins.autotests.cloud/
  * 2. Написать простейший автотест и добиться чтобы можно было запустить тесты из терминала командой типа "gradle some_tests"
@@ -36,6 +37,6 @@ public class WorkWithJenkinsTests {
         String a = "Hello,";
         String b = "Jenkins!";
         System.out.println(a + " " + b);
-        assertEquals(a, a,b);
+        assertEquals(a, a, b);
     }
 }

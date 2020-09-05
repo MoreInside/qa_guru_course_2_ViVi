@@ -14,7 +14,7 @@ public class ParametrizedTests {
     @Test
     @Tag("mango_tag")
     void paramitrizedStringTest() {
-        String a = System.getProperty("test" , "paramtest");
+        String a = System.getProperty("test", "paramtest");
 
         logger.info("\na = " + a);
         assertEquals("paramtest", a, "b = " + a);
